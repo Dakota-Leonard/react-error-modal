@@ -18,6 +18,8 @@ const AddUser = props => {
       return;
     }
 
+    props.onAddUser(enteredUsername, enteredAge);
+    //Lift State
     setEnteredUsername('');
     setEnteredAge('');
   };

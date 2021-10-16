@@ -3,6 +3,9 @@ import classes from './UsersList.module.css';
 
 const UsersList = props => {
   let id = 0;
+  if (!props.users.length) {
+    return '';
+  }
   return (
     <Card className={classes.users}>
       <ul>
